@@ -15,18 +15,14 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
+- script: |
+    npm run clean:all
+    npm install
+  displayName: 'Back-End Installing Npm Packages'
 
-
-- task: Npm@1
-  displayName: 'install'
-  inputs:
-    command: install
-
-- task: Npm@1
+- script: |
+    npm run setup --plugins
   displayName: 'Launch Setup Strapi'
-  inputs:
-    command: custom
-    customCommand: run setup --plugins
 
 - checkout: self
   submodules: true
