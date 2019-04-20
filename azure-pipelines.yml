@@ -18,4 +18,5 @@ steps:
 - task: Npm@1
   displayName: 'clean:all'
   inputs:
-    command: run clean:all
+    command: custom
+    customCommand: run clean:all
