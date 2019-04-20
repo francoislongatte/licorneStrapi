@@ -26,7 +26,7 @@ steps:
   displayName: 'Launch Setup Strapi'
   inputs:
     command: custom
-    customCommand: setup --plugins
+    customCommand: run setup --plugins
 
 - checkout: self
   submodules: true
