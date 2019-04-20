@@ -19,7 +19,7 @@ steps:
   displayName: 'clean:all'
   inputs:
     command: custom
-    customCommand: clean:all
+    customCommand: "run clean:all"
 
 - task: Npm@1
   displayName: 'install'
