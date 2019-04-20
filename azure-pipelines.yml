@@ -20,3 +20,17 @@ steps:
   inputs:
     command: custom
     customCommand: run clean:all
+
+- task: Npm@1
+  displayName: 'install'
+  inputs:
+    command: install
+
+- task: Npm@1
+  displayName: 'Launch Setup Strapi'
+  inputs:
+    command: custom
+    customCommand: run setup --plugins
+
+- checkout: self
+  submodules: true
