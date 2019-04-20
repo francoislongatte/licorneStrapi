@@ -24,6 +24,6 @@ steps:
     npm run setup --plugins
   displayName: 'Launch Setup Strapi'
 
-steps:
-  - checkout: self
-    submodules: true
+- checkout: self
+  submodules: true
+  
