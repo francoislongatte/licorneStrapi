@@ -16,7 +16,7 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm Run clean:all
+    npm run-script clean:all
   displayName: 'clean:all'
 
 - script: |
@@ -24,7 +24,7 @@ steps:
   displayName: 'Back-End Installing Npm Packages'
 
 - script: |
-    npm Run setup --plugins
+    npm run-script setup --plugins
   displayName: 'Launch Setup Strapi'
 
 - checkout: self
