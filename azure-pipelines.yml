@@ -18,7 +18,7 @@ steps:
 - task: Npm@1
   inputs:
     command: 'custom'
-    customCommand: 'npm run clean:all'
+    customCommand: 'run clean:all'
 
 - script: |
     npm run-script setup --plugins
