@@ -18,7 +18,7 @@ steps:
 - task: Npm@1
   inputs:
     command: 'custom'
-    workingDir: '$(Agent.BuildDirectory)'
+    workingDir: $(Agent.BuildDirectory)
     customCommand: 'run clean:all'
 
 - task: Npm@1
