@@ -16,9 +16,10 @@ steps:
   displayName: 'Install Node.js'
 
 - task: Npm@1
+  displayName: 'clean package.json'
   inputs:
     command: 'custom'
-    customCommand: 'run clean:all'
+    customCommand: 'clean:all'
 
 - script: |
     npm run-script setup --plugins
