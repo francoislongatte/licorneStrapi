@@ -19,7 +19,7 @@ steps:
   inputs:
     command: 'custom'
     workingDir: '/'
-    customCommand: 'clean:all'
+    customCommand: 'run clean:all'
 
 - script: |
     npm run-script setup --plugins
