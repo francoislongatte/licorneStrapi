@@ -16,14 +16,15 @@ steps:
   displayName: 'Install Node.js'
 
 - task: Npm@1
-  displayName: 'clean package.json'
+  inputs:
+    command: 'install'
+    verbose: false
+
+- task: Npm@1
+  displayName: 'Launch Setup Strapi'
   inputs:
     command: 'custom'
-    customCommand: 'run clean:all'
-
-- script: |
-    npm run-script setup --plugins
-  displayName: 'Launch Setup Strapi'
+    customCommand: 'run setup --plugins'
 
 - checkout: self
   submodules: true
