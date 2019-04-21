@@ -15,11 +15,11 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
+
 - task: Npm@1
   inputs:
     command: 'custom'
-    workingDir: $(Build.SourcesDirectory)
-    customCommand: 'run clean:all'
+    customCommand: 'clean:all'
 
 - task: Npm@1
   displayName: 'Launch Setup Strapi'
