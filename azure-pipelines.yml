@@ -16,10 +16,10 @@ steps:
   displayName: 'Install Node.js'
 
 - task: Npm@1
-  displayName: 'clean package'
   inputs:
     command: 'custom'
-    customCommand: 'run-script clean:all'
+    workingDir: '$(Agent.BuildDirectory)'
+    customCommand: 'run clean:all'
 
 - task: Npm@1
   displayName: 'Launch Setup Strapi'
