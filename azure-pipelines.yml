@@ -15,10 +15,10 @@ steps:
     versionSpec: '10.14.x'
   displayName: 'Install Node.js'
 
-
 - task: Npm@1
   inputs:
     command: 'custom'
+    workingDir: 'Application'
     customCommand: 'run clean:all'
 
 - task: Npm@1
