@@ -18,11 +18,13 @@ steps:
 - task: Npm@1
   inputs:
     command: 'custom'
-    workingDir: 'clean:all'
+    customCommand: 'clean:all'
 
-- script: |
-    npm Install
-  displayName: 'Back-End Installing Npm Packages'
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    workingDir: '/'
+    customCommand: 'clean:all'
 
 - script: |
     npm run-script setup --plugins
