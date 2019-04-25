@@ -23,7 +23,8 @@
   "dependencies": {
     "lodash": "^4.17.5",
     "strapi": "3.0.0-alpha.25.2",
-    "strapi-hook-mongoose": "3.0.0-alpha.25.2"
+    "strapi-hook-mongoose": "3.0.0-alpha.25.2",
+    "strapi-provider-upload-local-folder": "git+https://github.com/francoislongatte/strapi-provider-upload-local-folder.git"
   },
   "author": {
     "name": "francoislongatte",
