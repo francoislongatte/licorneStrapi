@@ -5,11 +5,11 @@
       "connector": "strapi-hook-mongoose",
       "settings": {
         "client": "mongo",
-        "host": "${process.env.DATABASE_HOST || 'licorne-sa.documents.azure.com'}",
+        "host": "${process.env.DATABASE_HOST || 'licorne-data.documents.azure.com'}",
         "port": "${process.env.DATABASE_PORT || '10255'}",
         "database": "${process.env.DATABASE_NAME || 'strapi'}",
-        "username": "${process.env.DATABASE_USERNAME || 'licorne-sa'}",
-        "password": "${process.env.DATABASE_PASSWORD || 'cEgnyhVg1wjNGQIFqcJ86s1LFXEECcckYuTXLLezitFkUsvUNYcG1b1Fp5k0XAsPzc0VHR9Bm6eaRtZ2Q34Zfg=='}"
+        "username": "${process.env.DATABASE_USERNAME || 'licorne-data'}",
+        "password": "${process.env.DATABASE_PASSWORD || 'k82L6ZnVLkojhTE6tuHilRUpI4mDUsnWTr6UblZfjN7uzpAdwdlcQZRfxh89NL9tgbfaf6Uu2bAD2l99HwAgcA=='}"
       },
       "options": {
         "authenticationDatabase": "${process.env.DATABASE_AUTHENTICATION_DATABASE || ''}",
