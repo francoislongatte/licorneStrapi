@@ -42,9 +42,5 @@
     "packageManager": "npm",
     "uuid": "173a493c-5fe0-4da8-ad8d-678e9a725bdc"
   },
-  "engines": {
-    "node": ">= 10.0.0",
-    "npm": ">= 6.0.0"
-  },
   "license": "MIT"
 }
